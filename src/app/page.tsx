@@ -1,4 +1,5 @@
 import Navbar from './components/navbar'
+import Herobanner from './components/herobanner'
 
 // const mainPageStyles = {
 //   backgroundColor: '#ffffff',
@@ -6,12 +7,12 @@ import Navbar from './components/navbar'
 
 export default function Home() {
   return (
-    <div>
-      <header className='font-menu'>
+    <div className='font-menu'>
+      <header>
         <Navbar />
       </header>
       <main className='bg-white text-black'>
-        <h1>Welcome to the Home Page</h1>
+        <Herobanner />
       </main>
     </div>
   )
