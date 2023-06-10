@@ -16,14 +16,14 @@ const menuItems = [
 const Navbar = () => {
   return (
     <nav className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
+      <div className="max-w-7xl h-full mx-auto px-4 sm:px-6 py-12 lg:px-0">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="/"><Image src={imageLink} alt='Dine Market' width={140} height={25} layout="responsive" /></Link>
+              <Link href="/"><Image src={imageLink} alt="Dine Market" width={140} height={25} /></Link>
             </div>
             <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4 px-12">
+              <div className="ml-10 flex items-baseline space-x-4 px-10">
                 {menuItems.map((item) => (
                   <Link className="text-black px-3 py-2 rounded-md text-sm font-medium" key={item.href} href={item.href}>
                       {item.label}{' '}
