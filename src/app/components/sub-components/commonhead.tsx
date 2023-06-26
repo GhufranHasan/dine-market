@@ -12,7 +12,7 @@ const Commonhead: React.FC<HeadingProps> = ({
   return (
     <div className="text-center">
         <span className="text-xs tracking-widest text-blue-700">{bluehead}</span>
-        <p className="text-2xl md:text-4xl py-3 tracking-wide">{mainhead}</p>
+        <p className="text-lg md:text-4xl py-3 tracking-wide">{mainhead}</p>
     </div>
   )
 }

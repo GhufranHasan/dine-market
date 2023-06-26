@@ -16,7 +16,7 @@ const herobanner = () => {
             <div className="md:w-9/12 py-4">
                 <p className="text-gray-500 tracking-wide text-xl">Anyone can beat you but no one can beat your outfit as long as you wear Dine outfits.</p>
             </div>
-            <div className="flex bg-black max-sm:w-3/5 h-20 md:w-2/5 md:h-16 py-3 my-9 text-center justify-center space-x-2">
+            <div className="flex bg-black h-20 md:w-3/5 md:h-16 py-3 my-9 text-center justify-center space-x-2">
                 <BiCart className="text-white text-3xl my-auto md:text-4xl" />
                 <button className="text-white font-bold py-1 md:py-2" type="submit">Start Shopping</button>
             </div>
