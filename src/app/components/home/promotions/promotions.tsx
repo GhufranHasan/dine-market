@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Commonhead from '../../shared/commonhead';
 import Menpromocard from './mini-components/menpromocard';
 
-const girl: string = "/images/blackdress-girl.png";
+const girl: string = "/images/home-images/blackdress-girl.png";
 
 const Promotions = () => {
   return (
@@ -35,8 +35,8 @@ const Promotions = () => {
         {/* right side starts */}
         <div className="md:w-1/2 md:flex">
           <div className="flex flex-wrap">
-            <Menpromocard bgroundColor="#EFE1C7" imageurl="/images/blueshirt.png" productTitle="Flex Sweatshirt" oldPrice="$100.00" newPrice="$75.00" />
-            <Menpromocard bgroundColor="#D7D7D9" imageurl="/images/grayshirt.png" productTitle="Flex Push Button Bomber" oldPrice="$225.00" newPrice="$190.00" />
+            <Menpromocard bgroundColor="#EFE1C7" imageurl="/images/home-images/blueshirt.png" productTitle="Flex Sweatshirt" oldPrice="$100.00" newPrice="$75.00" />
+            <Menpromocard bgroundColor="#D7D7D9" imageurl="/images/home-images/grayshirt.png" productTitle="Flex Push Button Bomber" oldPrice="$225.00" newPrice="$190.00" />
           </div>
         </div>
         {/* right side ends */}

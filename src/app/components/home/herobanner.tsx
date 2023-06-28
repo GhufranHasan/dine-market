@@ -21,13 +21,13 @@ const herobanner = () => {
                 <button className="text-white font-bold py-1 md:py-2" type="submit">Start Shopping</button>
             </div>
             <div className="py-9">
-                <Image src='/images/FeaturedList.png' width={700} height={300} alt='Featured List' />
+                <Image src='/images/home-images/FeaturedList.png' width={700} height={300} alt='Featured List' />
             </div>
         </div>
         {/* left side ends */}
         {/* right side starts */}
         <div className="justify-items-center">
-            <Image src='/images/hero1.png' width={675} height={675} alt='Girl in hero banner'/>
+            <Image src='/images/home-images/hero1.png' width={675} height={675} alt='Girl in hero banner'/>
         </div>
         {/* right side ends */}
     </div>

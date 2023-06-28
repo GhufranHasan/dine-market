@@ -16,13 +16,13 @@ const menuItems = [
       {
         name: 'New Arrivals',
         href: '/',
-        imageSrc: '/images/trending-fashion.jpg',
+        imageSrc: '/images/home-images/trending-fashion.jpg',
         imageAlt: 'Girl holding bag',
       },
       {
         name: 'Basic Tees',
         href: '/',
-        imageSrc: '/images/trending-summer.jpg',
+        imageSrc: '/images/home-images/trending-summer.jpg',
         imageAlt: 'Summer clothes',
       },
     ],
@@ -74,13 +74,13 @@ const menuItems = [
       {
         name: 'New Arrivals',
         href: '/',
-        imageSrc: '/images/product-page-04-detail-product-shot-01.jpg',
+        imageSrc: '/images/home-images/product-page-04-detail-product-shot-01.jpg',
         imageAlt: 'Drawstring top with elastic loop closure and textured interior padding.',
       },
       {
         name: 'Artwork Tees',
         href: '/',
-        imageSrc: '/images/category-page-02-image-card-06.jpg',
+        imageSrc: '/images/home-images/category-page-02-image-card-06.jpg',
         imageAlt:
           'Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.',
       },
@@ -130,13 +130,13 @@ const menuItems = [
       {
         name: 'New Arrivals',
         href: '/',
-        imageSrc: '/images/kids-group.jpg',
+        imageSrc: '/images/home-images/kids-group.jpg',
         imageAlt: 'Drawstring top with elastic loop closure and textured interior padding.',
       },
       {
         name: 'Artwork Tees',
         href: '/',
-        imageSrc: '/images/kids-lifestyles.jpg',
+        imageSrc: '/images/home-images/kids-lifestyles.jpg',
         imageAlt:
           'Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.',
       },

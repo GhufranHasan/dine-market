@@ -32,7 +32,7 @@ const ProductOverview = () => {
         </div>
         <div className="md:flex">
           <div className="w-80 mx-auto md:w-1/2 mt-28 md:mt-0 md:ml-24">
-            <Image src={'/images/pro_over.png'} alt={'white jacket dress'} width={500} height={500} />
+            <Image src={'/images/home-images/pro_over.png'} alt={'white jacket dress'} width={500} height={500} />
           </div>
           <div className="md:w-1/2 ml-2 px-6 my-6 md:my-auto">
               <p className="text-justify text-sm tracking-widest">This piece is ethically crafted in our small family-owned workshop in Peru with unmatched attention to detail and care. The Natural color is the actual natural color of the fiber, undyed and 100% traceable.</p>
