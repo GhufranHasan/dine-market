@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import Commonhead from './sub-components/commonhead';
-import Menpromocard from './sub-components/menpromocard';
+import Commonhead from '../../shared/commonhead';
+import Menpromocard from './mini-components/menpromocard';
 
 const girl: string = "/images/blackdress-girl.png";
 

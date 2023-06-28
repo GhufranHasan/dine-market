@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import LinksPages from '../sub-components/links'
-import Copyrights from '../sub-components/copyrights'
+import LinksPages from './mini-components/links'
+import Copyrights from './mini-components/copyrights'
 import { FaTwitter, FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
 
 const imageLink: string = '/Logo.png'

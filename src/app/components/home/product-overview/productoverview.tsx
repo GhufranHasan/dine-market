@@ -1,5 +1,5 @@
 import React from 'react'
-import FeaturePart from './sub-components/feature-part'
+import FeaturePart from './mini-components/feature-part'
 import Image from 'next/image'
 
 const ProductOverview = () => {

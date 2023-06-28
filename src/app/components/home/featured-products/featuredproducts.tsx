@@ -1,6 +1,6 @@
 import React from 'react'
-import Commonhead from './sub-components/commonhead';
-import Cardproduct from './sub-components/cardproduct';
+import Commonhead from '../../shared/commonhead';
+import Cardproduct from './mini-components/cardproduct';
 
 const Featuredproducts = () => {
   return (

@@ -1,9 +1,9 @@
 import Navbar from './components/header/navbar'
-import Herobanner from './components/herobanner'
-import Promotions from './components/promotions'
-import Featuredproducts from './components/featuredproducts'
-import ProductOverview from './components/productoverview'
-import Newsletter from './components/newsletter'
+import Herobanner from './components/home/herobanner'
+import Promotions from './components/home/promotions/promotions'
+import Featuredproducts from './components/home/featured-products/featuredproducts'
+import ProductOverview from './components/home/product-overview/productoverview'
+import Newsletter from './components/home/newsletter'
 import Footer from './components/footer/page-links'
 
 // const mainPageStyles = {
