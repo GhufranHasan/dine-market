@@ -33,8 +33,8 @@ const Promotions = () => {
         </div>
         {/* left side ends */}
         {/* right side starts */}
-        <div className="md:w-1/2 md:flex">
-          <div className="flex flex-wrap">
+        <div className="md:w-1/2 w-full md:flex">
+          <div className="flex md:flex-row md:mx-0 flex-col">
             <Menpromocard bgroundColor="#EFE1C7" imageurl="/images/home-images/blueshirt.png" productTitle="Flex Sweatshirt" oldPrice="$100.00" newPrice="$75.00" />
             <Menpromocard bgroundColor="#D7D7D9" imageurl="/images/home-images/grayshirt.png" productTitle="Flex Push Button Bomber" oldPrice="$225.00" newPrice="$190.00" />
           </div>

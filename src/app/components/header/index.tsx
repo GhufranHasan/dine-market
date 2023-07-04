@@ -27,42 +27,42 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="hidden md:block z-30">
-            <div className="ml-10 flex items-baseline space-x-4 px-10">
-            {menuItems.map((item) => (
-            <div className="group relative" key={item.href}>
-              <Link className="text-black px-3 py-2 rounded-md text-sm font-medium" href={item.href}>
-                {item.label}{' '}
-                <FaChevronDown className="inline-block h-3 w-3 text-gray-400 hover:rotate-180 duration-500" />
-              </Link>
-              <div>
-                {item.sections && item.featured && (
-                  <div className="flex invisible group-hover:visible absolute mt-2 p-2 bg-white w-[975px] h-auto border border-gray-500 transition-all transform scale-95 origin-top-right">
-                    {item.sections.map((sectionItem) => (
-                      <div className="">
-                        <div key={sectionItem.name} className="flex-col text-black px-4 py-4">
-                          <p className="font-semibold">{sectionItem.name}</p>
-                          <div>
-                            {sectionItem.items && (
-                              <ul>
-                                {sectionItem.items.map((secItem) => (
-                                  <li className="pb-2 hover:text-gray-500"><Link href={secItem.href}>{secItem.name}</Link></li>
-                                ))}
-                              </ul>
-                            )}
+              <div className="ml-10 flex items-baseline space-x-4 px-10">
+              {menuItems.map((item) => (
+              <div className="group relative" key={item.href}>
+                <Link className="text-black px-3 py-2 rounded-md text-sm font-medium" href={item.href}>
+                  {item.label}{' '}
+                  <FaChevronDown className="inline-block h-3 w-3 text-gray-400 hover:rotate-180 duration-500" />
+                </Link>
+                <div>
+                  {item.sections && item.featured && (
+                    <div className="flex invisible group-hover:visible absolute mt-2 p-2 bg-white w-[975px] h-auto border border-gray-500 transition-all transform scale-95 origin-top-right">
+                      {item.sections.map((sectionItem) => (
+                        <div className="">
+                          <div key={sectionItem.name} className="flex-col text-black px-4 py-4">
+                            <p className="font-semibold">{sectionItem.name}</p>
+                            <div>
+                              {sectionItem.items && (
+                                <ul>
+                                  {sectionItem.items.map((secItem) => (
+                                    <li className="pb-2 hover:text-gray-500"><Link href={secItem.href}>{secItem.name}</Link></li>
+                                  ))}
+                                </ul>
+                              )}
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    ))}
-                    {item.featured.map((featuredItem) => (
-                  <div key={featuredItem.name} className="mb-4 px-4 pt-6 transition-transform duration-500 delay-${index + 1}00 transform translate-y-[-20px]">
-                    <Link href={featuredItem.href}>
-                      <Image src={featuredItem.imageSrc} alt={featuredItem.imageAlt} width={600} height={600} />
-                    </Link>
-                    <Link href={featuredItem.href} className="text-sm font-medium text-gray-700">
-                      {featuredItem.name}
-                    </Link>
-                  </div>
-                ))}
+                      ))}
+                      {item.featured.map((featuredItem) => (
+                    <div key={featuredItem.name} className="mb-4 px-4 pt-6 transition-transform duration-500 delay-${index + 1}00 transform translate-y-[-20px]">
+                      <Link href={featuredItem.href}>
+                        <Image src={featuredItem.imageSrc} alt={featuredItem.imageAlt} width={600} height={600} />
+                      </Link>
+                      <Link href={featuredItem.href} className="text-sm font-medium text-gray-700">
+                        {featuredItem.name}
+                      </Link>
+                    </div>
+                  ))}
                   </div>
                 )}
               </div>
