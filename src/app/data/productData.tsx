@@ -1,10 +1,14 @@
-const productData = [
+import { ProductCategory } from '../utils/type';
+
+const productData: ProductCategory[] = [
     // Female
     {
+        proCatId: 1,
         label: 'Female',
         href: '/female',
         details:[
             {
+                itemId: 1,
                 title: 'Brushed Raglan Sweatshirt',
                 category: 'Sweaters',
                 price: 175.00,
@@ -13,6 +17,7 @@ const productData = [
                 featured: true
             },
             {
+                itemId: 2,
                 title: 'Cameryn Sash Tie Dress',
                 category: 'Dress',
                 price: 545.00,
@@ -21,6 +26,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 3,
                 title: 'Flex Sweatpants',
                 category: 'Sweaters',
                 price: 175.00,
@@ -29,6 +35,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 4,
                 title: 'Raglan Sweatshirt',
                 category: 'Pants',
                 price: 195.00,
@@ -37,6 +44,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 5,
                 title: 'Flex Sweatshirt',
                 category: 'Sweaters',
                 price: 175.00,
@@ -45,6 +53,7 @@ const productData = [
                 featured: true
             },
             {
+                itemId: 6,
                 title: 'Pink Fleece Sweatpants',
                 category: 'Pants',
                 price: 195.00,
@@ -53,6 +62,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 7,
                 title: 'Lite Sweatpants',
                 category: 'Pants',
                 price: 150.00,
@@ -61,6 +71,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 8,
                 title: 'Imperial Alpaca Mock Neck',
                 category: 'Sweaters',
                 price: 475.00,
@@ -69,6 +80,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 9,
                 title: 'Imperial Alpaca Hoodie',
                 category: 'Jackets',
                 price: 525.00,
@@ -77,6 +89,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 10,
                 title: 'Muscle Tank',
                 category: 'Jackets',
                 price: 75.00,
@@ -85,14 +98,16 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 11,
                 title: 'Camisole',
                 category: 'Underwear',
                 price: 65.00,
                 imageUrl: '/images/female-product/pro11.png',
                 imageText: 'Camisole',
-                featured: true
+                featured: false
             },
             {
+                itemId: 12,
                 title: 'Brushed Bomber',
                 category: 'Jackets',
                 price: 225.00,
@@ -104,10 +119,12 @@ const productData = [
     },
     // Male
     {
+        proCatId: 2,
         label: 'Male',
         href: '/male',
         details:[
             {
+                itemId: 13,
                 title: 'Varsity Raglan Sweatshirt',
                 category: 'Sweaters',
                 price: 195.00,
@@ -116,6 +133,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 14,
                 title: 'Varsity Sweatshirt',
                 category: 'Sweaters',
                 price: 195.00,
@@ -124,6 +142,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 15,
                 title: 'Pique T Shirt',
                 category: 'T Shirts',
                 price: 100.00,
@@ -132,6 +151,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 16,
                 title: 'Flex Push Button Bomber',
                 category: 'Jackets',
                 price: 225.00,
@@ -140,6 +160,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 17,
                 title: 'Flex Sweatpants',
                 category: 'Pants',
                 price: 150.00,
@@ -148,6 +169,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 18,
                 title: 'Flex Bomber',
                 category: 'Jackets',
                 price: 225.00,
@@ -156,6 +178,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 19,
                 title: 'Pique Polo',
                 category: 'Polos',
                 price: 140.00,
@@ -164,6 +187,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 20,
                 title: 'Pique Polo',
                 category: 'Polos',
                 price: 140.00,
@@ -172,6 +196,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 21,
                 title: 'Classic Briefs',
                 category: 'Underwear',
                 price: 45.00,
@@ -180,6 +205,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 22,
                 title: 'Flex Shorts',
                 category: 'Pants',
                 price: 125.00,
@@ -188,6 +214,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 23,
                 title: 'Pocket T Shirt',
                 category: 'T Shirts',
                 price: 95.00,
@@ -196,6 +223,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 24,
                 title: 'Pocket T Shirt',
                 category: 'T Shirts',
                 price: 95.00,
@@ -207,10 +235,12 @@ const productData = [
     },
     // Kids
     {
+        proCatId: 3,
         label: 'Kids',
         href: '/kids',
         details:[
             {
+                itemId: 25,
                 title: 'Baby Pants',
                 category: 'Pants',
                 price: 36.00,
@@ -219,6 +249,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 26,
                 title: 'Baby Hooded Cardigan',
                 category: 'Jackets',
                 price: 46.00,
@@ -227,6 +258,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 27,
                 title: 'Baby Ribbed Booties',
                 category: 'Shoes',
                 price: 24.00,
@@ -235,6 +267,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 28,
                 title: 'Baby Roll Up Tee',
                 category: 'T Shirts',
                 price: 28.00,
@@ -243,6 +276,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 29,
                 title: 'Baby Onesie',
                 category: 'T Shirts',
                 price: 30.00,
@@ -251,6 +285,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 30,
                 title: 'Baby Playsuit',
                 category: 'Jackets',
                 price: 48.00,
@@ -259,6 +294,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 31,
                 title: 'Wide Leg Trousers',
                 category: 'Polos',
                 price: 44.00,
@@ -267,6 +303,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 32,
                 title: 'Creneck Tee',
                 category: 'T Shirts',
                 price: 30.00,
@@ -275,6 +312,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 33,
                 title: 'Creneck Sweater',
                 category: 'Sweaters',
                 price: 57.00,
@@ -283,6 +321,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 34,
                 title: 'Loose Fit Dress',
                 category: 'Dress',
                 price: 48.00,
@@ -291,6 +330,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 35,
                 title: 'Tank Top',
                 category: 'Underwear',
                 price: 24.00,
@@ -299,6 +339,7 @@ const productData = [
                 featured: false
             },
             {
+                itemId: 36,
                 title: 'Wide Leg Trousers',
                 category: 'Pants',
                 price: 44.00,

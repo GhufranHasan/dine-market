@@ -1,32 +1,36 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 import Commonhead from '../../shared/commonhead';
 import Cardproduct from '../../shared/cardproduct';
+import { ProductCategory, Product } from '@/app/utils/type';
+import  productData from '../../../data/productData';
 
 const Featuredproducts = () => {
+  // Filter the featured products from the productData array
+  const featuredProducts: Product[] = productData
+    .flatMap((category: ProductCategory) => category.details)
+    .filter((product: Product) => product.featured);
+
   return (
     <div className="font-bold">
-        <Commonhead bluehead="PRODUCTS" mainhead="Check What We Have" />
-        <div className="md:flex">
-          {/* Left arrow */}
-          {/* Code here */}
-          {/* Product 1 */}
-          <div className="">
-            <Cardproduct imageUrl="/images/female-product/pro1.png" alterText="black long dress" prodTitle="Brushed Raglan Sweatshirt" prodCategory="Long Dress" prodPrice={195.00} />
+      <Commonhead bluehead="PRODUCTS" mainhead="Check What We Have" />
+      <div className="md:flex">
+        {/* Featured Products */}
+        {featuredProducts.map((product: Product) => (
+          <div key={product.itemId}>
+            <Cardproduct
+              id={product.itemId}
+              imageUrl={product.imageUrl}
+              alterText={product.imageText}
+              prodTitle={product.title}
+              prodCategory={product.category}
+              prodPrice={product.price}
+            />
           </div>
-          {/* Product 2 */}
-          <div>
-            <Cardproduct imageUrl="/images/female-product/pro2.png" alterText="white jacket" prodTitle="Brushed Bomber" prodCategory="Jacket" prodPrice={225.00} />
-          </div>
-          {/* Product 3 */}
-          <div>
-            <Cardproduct imageUrl="/images/female-product/pro3.png" alterText="gray long dress" prodTitle="Flex Sweatshirt" prodCategory="Long Dress" prodPrice={175.00} />
-          </div>
-          {/* Right arrow */}
-          {/* Code here */}
-        </div>
+        ))}
+      </div>
     </div>
+  );
+};
 
-  )
-}
-
-export default Featuredproducts
+export default Featuredproducts;

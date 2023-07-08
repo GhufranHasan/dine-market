@@ -1,7 +1,7 @@
 const menuItems = [
     { 
       label: 'Female', 
-      href: '/female',
+      href: 'category/female',
       featured: [
         {
           name: 'New Arrivals',
@@ -59,7 +59,7 @@ const menuItems = [
     },
     { 
       label: 'Male', 
-      href: '/male',
+      href: 'category/male',
       featured: [
         {
           name: 'New Arrivals',
@@ -115,7 +115,7 @@ const menuItems = [
     },
     { 
       label: 'Kids', 
-      href: '/kids',
+      href: 'category/kids',
       featured: [
         {
           name: 'New Arrivals',

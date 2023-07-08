@@ -68,7 +68,7 @@ const Navbar = () => {
               </div>
         </div>
       ))}
-          <Link className="text-black px-3 py-2 rounded-md text-sm font-medium" href="/all-products">
+          <Link className="text-black px-3 py-2 rounded-md text-sm font-medium" href="/products">
             All Products
           </Link>
         </div>
@@ -120,7 +120,7 @@ const Navbar = () => {
           <FaChevronDown className="inline-block h-3 w-3 text-gray-400 hover:rotate-180 duration-500" />
         </Link>
       ))}
-      <Link className="text-gray-700 px-4 py-2 hover:bg-black hover:text-white" href="/all-products">
+      <Link className="text-gray-700 px-4 py-2 hover:bg-black hover:text-white" href="/products">
         All Products
       </Link>
       <button className="mt-4 h-12 w-12 rounded-full bg-gray-100 text-gray-700 hover:text-gray-900 focus:outline-none">
