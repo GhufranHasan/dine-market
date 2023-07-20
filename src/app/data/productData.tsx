@@ -26,15 +26,15 @@ const productData = [
                 price: 175.00,
                 imageUrl: '/images/female-product/pro5.png',
                 imageText: 'Flex Sweatpants',
-                featured: false
+                featured: true
             },
             {
                 title: 'Raglan Sweatshirt',
-                category: 'Pants',
+                category: 'Sweaters',
                 price: 195.00,
                 imageUrl: '/images/female-product/pro7.png',
                 imageText: 'Raglan Sweatshirt',
-                featured: false
+                featured: true
             },
             {
                 title: 'Flex Sweatshirt',
@@ -50,7 +50,7 @@ const productData = [
                 price: 195.00,
                 imageUrl: '/images/female-product/pro6.png',
                 imageText: 'Pink Fleece Sweatpants',
-                featured: false
+                featured: true
             },
             {
                 title: 'Lite Sweatpants',
@@ -58,7 +58,7 @@ const productData = [
                 price: 150.00,
                 imageUrl: '/images/female-product/pro8.png',
                 imageText: 'Lite Sweatpants',
-                featured: false
+                featured: true
             },
             {
                 title: 'Imperial Alpaca Mock Neck',
@@ -74,7 +74,7 @@ const productData = [
                 price: 525.00,
                 imageUrl: '/images/female-product/pro10.png',
                 imageText: 'Imperial Alpaca Hoodie',
-                featured: false
+                featured: true
             },
             {
                 title: 'Muscle Tank',
@@ -82,7 +82,7 @@ const productData = [
                 price: 75.00,
                 imageUrl: '/images/female-product/pro12.png',
                 imageText: 'Muscle Tank',
-                featured: false
+                featured: true
             },
             {
                 title: 'Camisole',
@@ -137,7 +137,7 @@ const productData = [
                 price: 225.00,
                 imageUrl: '/images/male-product/pro4.png',
                 imageText: 'Flex Push Button Bomber',
-                featured: false
+                featured: true
             },
             {
                 title: 'Flex Sweatpants',
