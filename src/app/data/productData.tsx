@@ -32,16 +32,16 @@ const productData: ProductCategory[] = [
                 price: 175.00,
                 imageUrl: '/images/female-product/pro5.png',
                 imageText: 'Flex Sweatpants',
-                featured: false
+                featured: true
             },
             {
                 itemId: 4,
                 title: 'Raglan Sweatshirt',
-                category: 'Pants',
+                category: 'Sweaters',
                 price: 195.00,
                 imageUrl: '/images/female-product/pro7.png',
                 imageText: 'Raglan Sweatshirt',
-                featured: false
+                featured: true
             },
             {
                 itemId: 5,
@@ -59,7 +59,7 @@ const productData: ProductCategory[] = [
                 price: 195.00,
                 imageUrl: '/images/female-product/pro6.png',
                 imageText: 'Pink Fleece Sweatpants',
-                featured: false
+                featured: true
             },
             {
                 itemId: 7,
@@ -68,7 +68,7 @@ const productData: ProductCategory[] = [
                 price: 150.00,
                 imageUrl: '/images/female-product/pro8.png',
                 imageText: 'Lite Sweatpants',
-                featured: false
+                featured: true
             },
             {
                 itemId: 8,
@@ -86,7 +86,7 @@ const productData: ProductCategory[] = [
                 price: 525.00,
                 imageUrl: '/images/female-product/pro10.png',
                 imageText: 'Imperial Alpaca Hoodie',
-                featured: false
+                featured: true
             },
             {
                 itemId: 10,
@@ -95,7 +95,7 @@ const productData: ProductCategory[] = [
                 price: 75.00,
                 imageUrl: '/images/female-product/pro12.png',
                 imageText: 'Muscle Tank',
-                featured: false
+                featured: true
             },
             {
                 itemId: 11,
@@ -157,7 +157,7 @@ const productData: ProductCategory[] = [
                 price: 225.00,
                 imageUrl: '/images/male-product/pro4.png',
                 imageText: 'Flex Push Button Bomber',
-                featured: false
+                featured: true
             },
             {
                 itemId: 17,
