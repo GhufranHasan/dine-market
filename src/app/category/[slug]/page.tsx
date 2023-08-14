@@ -2,7 +2,7 @@ import { ProductCategory, Product } from '@/app/utils/type';
 import productData from '@/app/data/productData';
 import Cardproduct from '../../components/shared/cardproduct';
 
-export function filterProductsByCategory(category: string): Product[] {
+function filterProductsByCategory(category: string): Product[] {
   const filteredCategory = productData.find(
     (productCategory: ProductCategory) =>
       productCategory.label.toLowerCase() === category.toLowerCase()
