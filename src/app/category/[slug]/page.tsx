@@ -17,7 +17,7 @@ export function filterProductsByCategory(category: string): Product[] {
   return sortedProducts;
 }
 
-export default function Page({ params }: { params: { slug: string } }) {
+export default function CategoryPage({ params }: { params: { slug: string } }) {
   const result = filterProductsByCategory(params.slug);
 
   return (
