@@ -37,7 +37,7 @@ export default function Page({ params }: { params: { id: string } }) {
               <div className="flex gap-x-3">
                 {sizes.map((item) => {
                   return(
-                    <div className="flex items-center justify-center w-6 h-6 mt-2 duration-300 border rounded-full hover:shadow-xl">
+                    <div className="flex items-center justify-center w-6 h-6 mt-2 duration-300 border rounded-full hover:shadow-xl" key={item}>
                       <span className="text-[10px] font-semibold text-center text-gray-600">{item.toUpperCase()}</span>
                     </div>)
                 })}
