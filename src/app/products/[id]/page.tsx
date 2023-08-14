@@ -35,12 +35,11 @@ export default function Page({ params }: { params: { id: string } }) {
             <div>
               <h3 className="mt-6 text-xs font-semibold">SELECT SIZE</h3>
               <div className="flex gap-x-3">
-                {sizes.map((item) => {
-                  return(
-                    <div className="flex items-center justify-center w-6 h-6 mt-2 duration-300 border rounded-full hover:shadow-xl" key={null}>
-                      <span className="text-[10px] font-semibold text-center text-gray-600">{item.toUpperCase()}</span>
-                    </div>)
-                })}
+                {sizes.map((item) => (
+                  <div className="flex items-center justify-center w-6 h-6 mt-2 duration-300 border rounded-full hover:shadow-xl" key={item}>
+                    <span className="text-[10px] font-semibold text-center text-gray-600">{item.toUpperCase()}</span>
+                  </div>
+                ))}
               </div>
               <div className="flex items-center mt-6 gap-x-3">
                 <h3 className="text-[10px] font-semibold">Quantity:</h3>
@@ -54,7 +53,7 @@ export default function Page({ params }: { params: { id: string } }) {
                 <h2 className="text-2xl font-bold">${product.price.toFixed(2)}</h2>
               </div>
             </div>
-          </div> 
+          </div>
         </div>
       ))}
     </div>
