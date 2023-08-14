@@ -38,14 +38,14 @@ const Navbar = () => {
                   {item.sections && item.featured && (
                     <div className="flex invisible group-hover:visible absolute mt-2 p-2 bg-white w-[975px] h-auto border border-gray-500 transition-all transform scale-95 origin-top-right">
                       {item.sections.map((sectionItem) => (
-                        <div className="">
+                        <div className="" key={sectionItem.id}>
                           <div key={sectionItem.name} className="flex-col text-black px-4 py-4">
                             <p className="font-semibold">{sectionItem.name}</p>
                             <div>
                               {sectionItem.items && (
                                 <ul>
                                   {sectionItem.items.map((secItem) => (
-                                    <li className="pb-2 hover:text-gray-500"><Link href={secItem.href}>{secItem.name}</Link></li>
+                                    <li className="pb-2 hover:text-gray-500" key={secItem.href}><Link href={secItem.href}>{secItem.name}</Link></li>
                                   ))}
                                 </ul>
                               )}
