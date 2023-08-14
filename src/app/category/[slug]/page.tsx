@@ -1,21 +1,6 @@
-import { ProductCategory, Product } from '@/app/utils/type';
-import productData from '@/app/data/productData';
+import { Product } from '@/app/utils/type';
 import Cardproduct from '../../components/shared/cardproduct';
-
-function filterProductsByCategory(category: string): Product[] {
-  const filteredCategory = productData.find(
-    (productCategory: ProductCategory) =>
-      productCategory.label.toLowerCase() === category.toLowerCase()
-  );
-
-  const sortedProducts = filteredCategory
-    ? filteredCategory.details.sort((a: Product, b: Product) =>
-        a.title.localeCompare(b.title)
-      )
-    : [];
-
-  return sortedProducts;
-}
+import { filterProductsByCategory } from '@/app/utils/productUtils'; // Update this import
 
 export default function CategoryPage({ params }: { params: { slug: string } }) {
   const result = filterProductsByCategory(params.slug);
