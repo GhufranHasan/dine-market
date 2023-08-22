@@ -20,8 +20,8 @@ export default async function Home() {
     <div className="font-menu bg-white text-black">
       <Wrapper>
         <main>
-          {/* <MainPage /> */}
-          <ProductsCarousel />
+          <MainPage />
+          {/* <ProductsCarousel /> */}
         </main>
       </Wrapper>
     </div>
