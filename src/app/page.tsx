@@ -4,17 +4,17 @@ import BASE_PATH_API from './shared/BasePath';
 import ProductsCarousel from './components/home/productsCarousel';
 
 async function fetchAllProductsData() {
-  // let res = await fetch(`${BASE_PATH_API}/api/products`);
+  let res = await fetch(`${BASE_PATH_API}/api/products`);
 
-  // if(!res.ok)
-  //   throw new Error("Failed to fetch")
+  if(!res.ok)
+    throw new Error("Failed to fetch")
 
-  // return res.json();
-  return {response: "Hi"}
+  return res.json();
+  // return {response: "Hi"}
 }
 
 export default async function Home() {
-  let response = await fetchAllProductsData();
+  let {response} = await fetchAllProductsData();
   console.log("response: ", response)
   return (
     <div className="font-menu bg-white text-black">
